@@ -1,0 +1,170 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ELEMENTOS BASE*/
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-block {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 57px;
+    margin-top: 22px;
+    margin-bottom: 15px;
+    height: 25px;
+}
+
+.nav-list {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1.3em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 45px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: rgb(194, 191, 191);
+    margin-right: 15px;  
+}
+
+.nav-list a:hover {
+    color: rgb(150, 150, 150);  
+    transition: .4s ease all;
+}
+
+.nav-block-secundario {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1.3em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 45px;
+}
+
+.nav-list-secundario {
+    padding-inline-end: 40px;
+}
+.nav-list-secundario a{
+    text-decoration: none;
+    color: rgb(194, 191, 191);
+    margin-right: 15px;
+
+}
+
+.notificacao {
+    height: 28px;
+}
+
+/*FILME PRINCIPAL*/
+.filme-principal{
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/big.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.filme-principal .container {
+    width: 60%;
+}
+
+.titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*TITULO E AVALIAÇÃO DO FILME*/
+.iconbig{
+    display: flex;
+    margin-top: 15%;
+    height: 230px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.avaliacao{
+    color: #3c9050;
+    font-family: 'Arial Black';
+    font-size: 15px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+}
+
+/*BOTÕES*/
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+/*FILMES*/
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+}
